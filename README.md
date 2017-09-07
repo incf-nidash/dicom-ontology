@@ -1,10 +1,17 @@
 # dicom-ontology
 This repository contains the DICOM ontology used by the INCF-NIDASH NIDM-Experiment project.
 
-The terms came from the DICOM XML docbook that contains all of the DICOM information.
+The terms originated from the DICOM XML docbook that contains all of the DICOM tag information.
 This file originated from David Clunie.
 
-There are a number of non-alphanumeric characters in the dicom tag labels, things like "/", "_", "-" and the Greek letter mu 
-used as an abbreviation for "micro".  In this ontology, the "mu"'s were replaced by "u"'s to make the text handling
-easier. All non-alphanumberic characters and spaces were removed from the labels and camel case implmented
-to make the actual term (e.g. "Field of View Dimension(s) in Float" becomes "fieldOfViewDimensionsInFloat")
+In addition, defined based terms were extracted from the DICOM documentation and organized into a heirarchy.
+
+The term ID is written as:
+1) dicom_0000XXXX in which X stands for a number. These terms are extracted from the DICOM documentation.
+2) dicom_xxxxxxxx in which the DICOM tag is represented by 'xxxxxxxx'.
+
+In this ontology, the "mu"'s that were originally used for "micro" were replaced by "u"'s to make the text handling
+easier. The labels used here are those extracted from the DICOM docbook.
+
+Tags that were incorporated into Neurolex in earlier work have a owl:sameAs nlx_xxxxxx statement where "xxxxxx" 
+is the original Neurolex ID number.
