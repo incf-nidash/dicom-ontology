@@ -13,7 +13,7 @@
 
 #http://purl.org/nidash/dicom# rdf:type owl:Ontology .
 
-rdf:type owl:Ontology .
+[rdf:type owl:Ontology .]
 
 
 #################################################################
